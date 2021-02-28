@@ -77,6 +77,12 @@ declare namespace ReactSlider {
         minDistance?: number;
 
         /**
+         * The maximum distance between any pair of thumbs.
+         * Must be posiitve, but zero means they must sit on top of each other.
+         */
+        maxDistance?: number;
+
+        /**
          * Callback called only after moving a thumb has ended. The callback
          * will only be called if the action resulted in a change. The
          * function will be called with one argument,  the result value(s).
